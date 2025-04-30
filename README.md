@@ -2,15 +2,15 @@
 
 Python required package: pandas, datetime, os, subprocess, sys
 
-##Oxford stepcount Install: https://github.com/OxWearables/stepcount?tab=readme-ov-file#install
+## Oxford stepcount Install: https://github.com/OxWearables/stepcount?tab=readme-ov-file#install
 
 Minimum requirements: Python>=3.9, Java 8 (1.8)
 
-The following instructions make use of Anaconda to meet the minimum requirements:
+### The following instructions make use of Anaconda to meet the minimum requirements in Linux or Window:
 
 1. Download & install Anaconda.
 
-2. (Windows) Once installed, launch the Anaconda Prompt.
+2. Once installed, launch the Anaconda Prompt.
 
 3. Create a virtual environment:
 ```
@@ -30,12 +30,43 @@ $ pip install stepcount
 ```
 You are all set! The next time that you want to use stepcount, open the Anaconda Prompt and activate the environment (step 4). If you see (stepcount) in front of your prompt, you are ready to go!
 
-In the directory of pipeline_oxford_stepcount, input "cmd" to replace the original address. Input: python pipeline_oxford_stepcount.py <address_text_file> <output_directory
+## For linux (pipeline_linux_stepcount.py)
+make sure you have
+```
+init conda run 
+```
+then run
+```
+$ activate stepcount
+```
+then you will see (stepcount) in front of your prompt
+
+use cd /mnt/your-path to get into all the file address in your prompt.Input: python pipeline_oxford_stepcount.py <address_text_file> <output_directory
 Example: python pipeline_oxford_stepcount.py DS_10_address.txt DS_10_test
 
-address_text_file should be one address per line, with "". The file is Text format
+address_text_file should be one address per line, with or without "". The file is Text format
+Example: 
+```
+"/mnt/c/Users/piatt/mHealthLab/stepcount_algorithm_repeat/DS_10/DS_10-Free-LeftWrist.csv"
+"/mnt/c/Users/piatt/mHealthLab/stepcount_algorithm_repeat/DS_10/DS_10-Free-RightWrist.csv"
+```
 output_directory should be the file folder location
 
-Before running this pipeline, make sure you have already init Anaconda in your environment
+
+## For window (pipeline_oxford_stepcount.py)
+make sure you have
+```
+init conda run 
+```
+In the directory of pipeline_oxford_stepcount input cmd then Enter. In the command prompt, Input: python pipeline_oxford_stepcount.py <address_text_file> <output_directory
+Example: python pipeline_oxford_stepcount.py DS_10_address.txt DS_10_test
+
+address_text_file should be one address per line, with or without "". The file is Text format
+Example: 
+```
+"C:\Users\piatt\mHealthLab\stepcount_algorithm_repeat\DS_10\DS_10-Free-LeftWrist.csv"
+"C:\Users\piatt\mHealthLab\stepcount_algorithm_repeat\DS_10\DS_10-Free-RightWrist.csv"
+```
+output_directory should be the file folder location
 
 The result of the Oxford stepcount algorithm will be saved in a file folder called "outputs" in the output_directory

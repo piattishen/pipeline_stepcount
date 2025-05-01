@@ -70,3 +70,14 @@ Example:
 output_directory should be the file folder location
 
 The result of the Oxford stepcount algorithm will be saved in a file folder called "outputs" in the output_directory
+
+output example:
+
+file folder under outputs:
+
+![image](https://github.com/user-attachments/assets/33dfe800-7181-44e0-80d4-ed73fd61fa0f)
+
+all file for one dataset:
+
+![image](https://github.com/user-attachments/assets/adb5bfed-59b7-4c2c-bcf8-c9c56288e370)
+

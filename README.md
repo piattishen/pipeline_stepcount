@@ -18,16 +18,17 @@ $ conda create -n stepcount python=3.9 openjdk pip
 ```
 This creates a virtual environment called stepcount with Python version 3.9, OpenJDK, and Pip.
 
+4. Install stepcount:
+```
+$ pip install stepcount
+```
+
 5. Activate the environment:
 ```
 $ conda activate stepcount
 ```
 You should now see (stepcount) written in front of your prompt.
 
-7. Install stepcount:
-```
-$ pip install stepcount
-```
 You are all set! The next time that you want to use stepcount, open the Anaconda Prompt and activate the environment (step 4). If you see (stepcount) in front of your prompt, you are ready to go!
 
 ## For linux (pipeline_linux_stepcount.py)

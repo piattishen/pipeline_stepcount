@@ -54,6 +54,20 @@ Example:
 ```
 output_directory should be the file folder location
 
+## For Cluster on Northeastern:
+
+Run this for login in
+```
+srun -N 1 -n 1 -p short --pty bash
+```
+Then activate conda
+```
+module load anaconda3/2024.06
+```
+RUN the code, the last address is the output directory, the last but two the address for txt which include all address:
+```
+python "/home/wang.yichen8/pipeline_algorithm_stepcount/pipeline_linux_stepcount.py" "/scratch/wang.yichen8/Downloads/address.txt" "/scratch/wang.yichen8"
+```
 
 ## For window (pipeline_oxford_stepcount.py)
 make sure you have

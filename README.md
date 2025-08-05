@@ -70,7 +70,7 @@ conda activate stepcount
 ```
 RUN the code, the last address is the output directory, the last but two the address for txt which include all address:
 ```
-python "/home/wang.yichen8/pipeline_algorithm_stepcount/pipeline_linux_stepcount.py" "/scratch/wang.yichen8/Downloads/address.txt" "/scratch/wang.yichen8"
+python "/home/wang.yichen8/pipeline_algorithm_stepcount/pipeline_linux_stepcount.py" "/scratch/wang.yichen8/Downloads/Cluster_test_address_7.22.2025.txt" "/scratch/wang.yichen8"
 ```
 
 ## For window (pipeline_oxford_stepcount.py)

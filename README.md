@@ -64,6 +64,10 @@ Then activate conda
 ```
 module load anaconda3/2024.06
 ```
+Then activate bash
+```
+conda activate stepcount
+```
 RUN the code, the last address is the output directory, the last but two the address for txt which include all address:
 ```
 python "/home/wang.yichen8/pipeline_algorithm_stepcount/pipeline_linux_stepcount.py" "/scratch/wang.yichen8/Downloads/address.txt" "/scratch/wang.yichen8"

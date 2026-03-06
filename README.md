@@ -32,6 +32,39 @@ You should now see (stepcount) written in front of your prompt.
 
 You are all set! The next time that you want to use stepcount, open the Anaconda Prompt and activate the environment (step 4). If you see (stepcount) in front of your prompt, you are ready to go!
 
+## For Northeastern Cluster (combined_3stepcount_pipeline3)
+
+use with slrum_3algo.sh document
+
+in case this batch has:
+sbatch: error: Batch script contains DOS line breaks (\r\n)
+sbatch: error: instead of expected UNIX line breaks (\n).
+
+try:
+```
+sed -i 's/\r//' /home/wang.yichen8/pipeline_algorithm_stepcount/slrum_3algo.sh
+```
+
+for now, input,output and pipeline location in the format: 
+BASE_INPUT="/scratch/wang.yichen8/PAAWS_FreeLiving"
+BASE_OUTPUT="/scratch/wang.yichen8/PAAWS_results"
+PIPELINE="/home/wang.yichen8/pipeline_algorithm_stepcount/combined_3stepcount_pipeline3.py"
+
+modify input DS number by changing line 19:
+subjects=(
+    DS_10  DS_37
+    # ... add more subjects here
+)
+
+run the code: 
+
+```
+sbatch /.../pipeline_algorithm_stepcount/slrum_3algo.sh
+```
+change location based on where the .sh location.
+
+example format location of the raw data: "/scratch/wang.yichen8/PAAWS_FreeLiving/DS_138/accel/DS_138-Free-RightAnkle.csv"
+
 ## For linux (pipeline_linux_stepcount.py)
 make sure you have
 ```

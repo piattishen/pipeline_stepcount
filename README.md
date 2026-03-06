@@ -37,7 +37,9 @@ You are all set! The next time that you want to use stepcount, open the Anaconda
 use with slrum_3algo.sh document
 
 in case this batch has:
+
 sbatch: error: Batch script contains DOS line breaks (\r\n)
+
 sbatch: error: instead of expected UNIX line breaks (\n).
 
 try:

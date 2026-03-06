@@ -56,13 +56,13 @@ BASE_OUTPUT="/scratch/wang.yichen8/PAAWS_results"
 PIPELINE="/home/wang.yichen8/pipeline_algorithm_stepcount/combined_3stepcount_pipeline3.py"
 
 
-modify input DS number by changing line 19:
-...
+modify input DS number by changing DS nunmber in line 19:
+```
 subjects=(
     DS_10  DS_37
     # ... add more subjects here
 )
-...
+```
 
 run the code: 
 

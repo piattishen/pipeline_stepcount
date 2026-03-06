@@ -47,7 +47,7 @@ try:
 sed -i 's/\r//' /home/wang.yichen8/pipeline_algorithm_stepcount/slrum_3algo.sh
 ```
 
-# for now, input,output and pipeline location in the format: 
+for now, input,output and pipeline location in the format: 
 
 BASE_INPUT="/scratch/wang.yichen8/PAAWS_FreeLiving"
 
@@ -64,7 +64,7 @@ subjects=(
 )
 ```
 
-# run the code: 
+run the code: 
 
 ```
 sbatch /.../pipeline_algorithm_stepcount/slrum_3algo.sh

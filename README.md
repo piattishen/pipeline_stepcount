@@ -47,7 +47,7 @@ try:
 sed -i 's/\r//' /home/wang.yichen8/pipeline_algorithm_stepcount/slrum_3algo.sh
 ```
 
-for now, input,output and pipeline location in the format: 
+# for now, input,output and pipeline location in the format: 
 
 BASE_INPUT="/scratch/wang.yichen8/PAAWS_FreeLiving"
 
@@ -56,7 +56,7 @@ BASE_OUTPUT="/scratch/wang.yichen8/PAAWS_results"
 PIPELINE="/home/wang.yichen8/pipeline_algorithm_stepcount/combined_3stepcount_pipeline3.py"
 
 
-modify input DS number by changing DS nunmber in line 19:
+Modify the input DS number by changing DS number in line 19:
 ```
 subjects=(
     DS_10  DS_37
@@ -64,7 +64,7 @@ subjects=(
 )
 ```
 
-run the code: 
+# run the code: 
 
 ```
 sbatch /.../pipeline_algorithm_stepcount/slrum_3algo.sh

@@ -48,24 +48,33 @@ sed -i 's/\r//' /home/wang.yichen8/pipeline_algorithm_stepcount/slrum_3algo.sh
 ```
 
 for now, input,output and pipeline location in the format: 
+
 BASE_INPUT="/scratch/wang.yichen8/PAAWS_FreeLiving"
+
 BASE_OUTPUT="/scratch/wang.yichen8/PAAWS_results"
+
 PIPELINE="/home/wang.yichen8/pipeline_algorithm_stepcount/combined_3stepcount_pipeline3.py"
 
+
 modify input DS number by changing line 19:
+...
 subjects=(
     DS_10  DS_37
     # ... add more subjects here
 )
+...
 
 run the code: 
 
 ```
 sbatch /.../pipeline_algorithm_stepcount/slrum_3algo.sh
 ```
+
 change location based on where the .sh location.
 
-example format location of the raw data: "/scratch/wang.yichen8/PAAWS_FreeLiving/DS_138/accel/DS_138-Free-RightAnkle.csv"
+example format location of the raw data: 
+
+"/scratch/wang.yichen8/PAAWS_FreeLiving/DS_138/accel/DS_138-Free-RightAnkle.csv"
 
 ## For linux (pipeline_linux_stepcount.py)
 make sure you have

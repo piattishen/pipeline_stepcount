@@ -76,6 +76,28 @@ try:
 sed -i 's/\r//' /home/wang.yichen8/pipeline_algorithm_stepcount/slrum_3algo.sh
 ```
 
+## for 3stepcount_analysis_optimize.py
+
+run it by
+```
+srun --partition=short \
+>      --nodes=1 \
+>      --ntasks=1 \
+>      --cpus-per-task=8 \
+>      --mem=32G \
+>      --time=00:30:00 \
+>      --pty /bin/bash
+```
+
+```
+(base) [wang.yichen8@c0213 ~]$ python "/home/wang.yichen8/pipeline_algorithm_stepcount/3step_analysis_optimize.py" \
+>   --root    /scratch/wang.yichen8/PAAWS_results \
+>   --labels  /scratch/wang.yichen8/PAAWS_FreeLiving \
+>   --out     /scratch/wang.yichen8/step_analysis_output \
+>   --workers 8
+```
+
+
 
 ## For linux (pipeline_linux_stepcount.py)
 make sure you have

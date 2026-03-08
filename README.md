@@ -36,17 +36,6 @@ You are all set! The next time that you want to use stepcount, open the Anaconda
 
 use with slrum_3algo.sh document
 
-in case this batch has:
-
-sbatch: error: Batch script contains DOS line breaks (\r\n)
-
-sbatch: error: instead of expected UNIX line breaks (\n).
-
-try:
-```
-sed -i 's/\r//' /home/wang.yichen8/pipeline_algorithm_stepcount/slrum_3algo.sh
-```
-
 for now, input,output and pipeline location in the format: 
 
 BASE_INPUT="/scratch/wang.yichen8/PAAWS_FreeLiving"
@@ -75,6 +64,18 @@ change location based on where the .sh location.
 example format location of the raw data: 
 
 "/scratch/wang.yichen8/PAAWS_FreeLiving/DS_138/accel/DS_138-Free-RightAnkle.csv"
+
+in case this batch has:
+
+sbatch: error: Batch script contains DOS line breaks (\r\n)
+
+sbatch: error: instead of expected UNIX line breaks (\n).
+
+try:
+```
+sed -i 's/\r//' /home/wang.yichen8/pipeline_algorithm_stepcount/slrum_3algo.sh
+```
+
 
 ## For linux (pipeline_linux_stepcount.py)
 make sure you have
